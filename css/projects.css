@@ -1,0 +1,86 @@
+main .projects{
+    margin-top: 5rem;
+    padding:  5rem 2em ;
+}
+
+main .projects h1{
+    margin: 4rem 2rem;
+    font-size: 3.5rem;
+}
+
+main .projectsArea{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+main .projectItemArea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .projectsArea .projectItem{
+    width: 90%;
+    height: auto;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+}
+
+main .projectsArea .projectItem:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+
+
+main .projectsArea .projectItem img{
+    width: 100%;
+    height: 35rem;
+}
+
+main .projects p{
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+    
+}
+
+main .projects p:last-of-type{
+    color: #00d2df;
+}
+
+main .projectItem.breve{
+    width: 90%;
+    height: 300px;
+    background-color: #ccc;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+
+@media(max-width: 450px){
+    main .projects{
+        margin: 1em;
+        padding: 1em;
+        text-align: center
+    }
+
+    main .projectsArea{
+        grid-template-columns: 1fr;
+    }
+    main .projectItemArea p {
+        margin-top: 20px;
+    }
+
+}

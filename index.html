@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Filipe Lopes">
+    <meta name="description" content="Portfólio do desenvolvedor front-end Filipe Lopes da S.">
+    <meta name="keywords" content="portfolio, html, css, javascript, desenvolvimento, front-end">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Filipe Lopes</title>
+</head>
+<body>
+    <header class="init-hidden">
+       
+        <nav class="header">
+            <div class="logo">
+                <a  href="#home">&#123; FL &#125;</a>
+            </div>
+            
+            <ul class="menu">
+                <a href="#home"><li>Home</li></a>
+                <a href="#about"><li>Sobre</li></a>
+                <!-- <a href="#"><li>Experiência</li></a> -->
+                <a href="#projects"><li>Projetos</li></a>
+            </ul>
+        </nav>
+        <div id="menuMobile" onclick="showMenuMobile()">
+            <div class="menuMobileItem"></div>
+            <div class="menuMobileItem"></div>
+            <div class="menuMobileItem"></div>
+        </div>
+       
+    </header>
+    <main>
+        <section class="section1 " id="home" >
+            <div class="messageArea">
+                <h1>Olá, eu sou <br><span>Filipe Lopes</span><br>Desenvolvedor Front-end</h1>
+            </div>
+            <div class="buttonsArea">
+                  <a href="https://www.linkedin.com/in/filipe-lopes-da-silva-003b12125/" target="_blank">
+                    <div class="button-social">
+                        <img src="./assets/linkedin.png" alt="">
+                            Linkedin
+                    </div>
+                  </a>
+                
+                  <a href="https://github.com/Filipee-Lopes" target="_blank">
+                    <div class="button-social">
+                        <img src="./assets/github.png" alt="">
+                        Github
+                    </div>
+                  </a>
+            </div>
+         
+        </section>
+        <section class="about" id="about" data-anime="left">
+            <div class="aboutArea">
+                <h1>Sobre mim</h1>
+                <article>
+                    <h2>Santo André, São Paulo</h2>
+                    <p>
+                        Atualmente em transição de carreira, iniciei os estudos de desenvolvimento web em 2021, me reconheço como
+                        entusiasta em novas tecnologias do mercado, com aprendizado adquirido dia após dia.
+                        Possuo foco em desenvolvimento Front-end com Javascript, TypeScript, ReactJS e outras tecnologias que uso para
+                        criar aplicações web de alto nível e valor.
+                        Me considero ágil e consistente em aprimorar conhecimentos nas tecnologias, e com alta adaptabilidade às mudanças,
+                        pronto para superar qualquer desafio!
+                    </p>
+                </article>
+            </div>
+            <div class="imgArea">
+                <img src="./assets/IMG_20221201_081445.jpg" alt="">
+            </div>
+        </section>
+        <section class="projects" id="projects" data-anime="right">
+            <h1>Projetos</h1>
+            <div class="projectsArea">
+                <div class="projectItemArea">
+                   <div class="projectItem">
+                        <a href="https://react-calc-bf.vercel.app/" target="_blank"><img src="./assets/Captura de tela de 2022-11-16 15-56-30.png" alt="imagem de demonstração do projeto"></a>
+                    </div> 
+                    <p>Projeto realizado no início do aprendizado de ReactJS e TypeScript.</p>
+                    <p>Tecnologias utilizadas: HTML5, CSS3, TypeScript, ReactJS e JSX.</p>
+                    <a href="https://react-calc-bf.vercel.app/" target="_blank">
+                        <div class="button-social">Visualizar</div>
+                    </a>
+                </div>
+                <div class="projectItemArea">
+                    <div class="projectItem">
+                        <a  href="https://react-weather-api-omega.vercel.app/" target="_blank"><img src="./assets/Captura de tela de 2022-11-29 18-00-28.png" alt="imagem de demonstração do projeto"></a>
+                    </div> 
+                     <p>Projeto realizado no início do aprendizado de ReactJS e TypeScript, consumindo API.</p>
+                     <p>tecnologias utilizadas: HTML5, CSS3, TypeScript, ReactJS,JSX e Axios.</p>
+                        <a href="https://react-weather-api-omega.vercel.app/" target="_blank"><div class="button-social">Visualizar</div></a>
+                 </div>
+                 <div class="projectItemArea">
+                    <div class="projectItem breve">
+                     Em breve
+                     </div> 
+          
+                 </div>
+                 <div class="projectItemArea">
+                    <div class="projectItem breve">
+                        Em breve
+                     </div> 
+    
+                 </div>
+                     <div>
+                </div>
+            </div>
+        </section>
+
+     
+    </main>
+    <footer>Feito por <span>Filipe</span></footer>
+
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
